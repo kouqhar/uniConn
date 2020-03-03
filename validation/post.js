@@ -7,7 +7,7 @@ module.exports = function validatePostInput(data){
     data.text = !isEmpty(data.text) ? data.text : "";
 
     // Limit the text characters
-    if(!validator.isLength(data.text, { min : 10, max : 900 })){
+    if(!validator.isLength(data.text, { min : 10, max : 300 })){
         errors.text = "Post must be between 10 and 300 characters";
     }
 

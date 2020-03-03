@@ -56,3 +56,13 @@ passport.authenticate('jwt', { session : false }),
 *** /
 
 sudo sysctl fs.inotify.max_user_watches=582222 && sudo sysctl -p
+
+Thank you for signing up! This is a platform for students from various institutions to come on and communicate with each other, to activate your account and gain presence from others, here are some few tips  and tricks : 
+a. Create your profile with all the necessary fields filled.
+b. Complete your profile by adding your Education, Experience, etc.
+c. Post and Comment so your account could be found in the discovery.
+d. Visit the Discover to see users, their skills, social links, profile and more.
+I developed this for informative and educational purposes, so, use and make suggestions.
+I'm currently working on More features for you guys, peer-to-peer communication and many pieces of stuff.
+Welcome to uniConn. . . !!! Let's get ENGAGING proletariats.
+<img className="verified" src={auth.user.verified ? auth.verified : null} alt="Verified Account" title="Verified" name="Verified"/>

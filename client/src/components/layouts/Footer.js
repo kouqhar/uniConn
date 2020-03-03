@@ -16,7 +16,7 @@ export default () => {
                 <i className="fab fa-twitter fa-2x"></i>
             </a>
             <br />
-            Duniya Naphtali
+            Duniya Naphtali K.
             </p>
         </footer>
     )

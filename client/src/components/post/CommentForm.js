@@ -63,7 +63,7 @@ class CommentForm extends Component {
                         error={errors.text}
                     />
                   </div>
-                  <button type="submit" className="btn btn-dark">Submit</button>
+                  <button type="submit" className="btn btn-success">Comment</button>
                 </form>
 
               </div>

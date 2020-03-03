@@ -34,13 +34,14 @@ class PostItem extends Component {
             <div className="card card-body mb-3 text-white bg-dark">
               <div className="row">
                 <div className="col-md-2">
-                    <img className="rounded-circle d-none d-md-block" src={post.avatar}
+                    <img className="rounded-circle d-none d-md-block" 
+                      src={post.avatar}
                       alt={post.name} />
                   <br />
-                  <p className="text-center">{post.name}</p>
+                  <p className="text-center verified-container">{post.name} <img className="verified" src={post.name === "Duniya Naphtali K." ? "https://res.cloudinary.com/telicsound/image/upload/v1583264824/correct_r3g0qz.svg" : null} alt="Verified Account" title="Verified" name="Verified"/></p>
                 </div>
                 <div className="col-md-10">
-                  <p className="lead">
+                  <p className="lead text-left">
                     {post.text}
                   </p>
                   {showActions ? (<span>

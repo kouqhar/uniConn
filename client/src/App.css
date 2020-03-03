@@ -2,6 +2,20 @@ img {
   width: 100%;
 }
 
+.verified-container{
+  position: relative;
+  display: block;
+}
+
+.verified{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  padding-left: .25em;
+  transform: translateY(-30%);
+}
+
 .landing {
   position: relative;
   background: url('./img/uniConnLandingImage.jpeg') no-repeat;

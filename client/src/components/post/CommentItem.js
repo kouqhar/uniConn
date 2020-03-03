@@ -17,7 +17,7 @@ class CommentItem extends Component {
     render() {
         const { comment, postId, auth} = this.props;
 
-        return (
+        return ( 
             <div className="card card-body mb-3">
               <div className="row">
                 <div className="col-md-2">
@@ -25,7 +25,7 @@ class CommentItem extends Component {
                     src={comment.avatar} 
                     alt={comment.name} />
                   <br />
-                  <p className="text-center">{comment.name}</p>
+                  <p className="text-left verified-container">{comment.name} <img className="verified" src={comment.name === "Duniya Naphtali K." ? "https://res.cloudinary.com/telicsound/image/upload/v1583264824/correct_r3g0qz.svg" : null} alt="Verified Account" title="Verified" name="Verified"/></p>
                 </div>
                 <div className="col-md-10">
                   <p className="lead">

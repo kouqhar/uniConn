@@ -1,0 +1,58 @@
+Setting up our database : Using Mlab which gives us a remote mongoDB database.
+database is going to be stored when i deploy the application
+Very reliable, fast and secure
+
+/** DB connection
+cluster : binghamalumni
+user : duniya, password : a219390p
+**/
+
+** axios over fetch **
+
+* Express - Main framework
+* Mongoose - Used to connect and interact with mongoDB[database]
+* React - A JavaScript library for building user interfaces
+* Redux - Having a global state and sending information to the frontend.
+* Passport - Used for authentication
+* Passport-jwt - Json-web-token
+    {Passport && Passport-jwt} - after verification, a token is sent so the user can access a protected route.
+* Jsonwebtoken - Used to generate tokens
+* Body-parser - Used to accept and manipulate data
+* bcryptjs - Used to encrypt password/tokens, hash password
+* validator - Used for validations
+* nodemon - Constantly watch node application and update instead of manually restarting
+* Schema - is the set of objects (tables, views, etc.) that belong to that account.
+* 401 - un-authorization error.
+* concurrently - used to run different servers with one command.
+
+// React
+* React uses jsx{ JavaScript syntax extension} which is basically html inside your JS
+* functional components - Should only be used for DOM components{Has no life cycle method}
+* classbase components - S
+* Render - is a life cycle method which renders what is returned
+* React Router - React Router, and dynamic, client-side routing, allows us to build a single-page web application with navigation without the page refreshing as the user navigates.
+* axios - http client used to interact with the backend.
+* React-moment - it's a JS library used to format date.
+
+// Redux
+* Redux - Share data between components
+* Redux-thunk - Waits and dispatches requests
+* Provider - Provides the application with the store/data
+* When you bring in a component, you don't import it in curly braces.
+
+
+++ To use a router we need to import express
+
+
+/*** Delete Just the user but keep the profile
+router.delete('/', 
+passport.authenticate('jwt', { session : false }), 
+(req,res) => {
+    User.findOneAndRemove({ _id : req.user.id })
+    .then(() => {
+        res.json({ success : true })
+    });
+});
+*** /
+
+sudo sysctl fs.inotify.max_user_watches=582222 && sudo sysctl -p

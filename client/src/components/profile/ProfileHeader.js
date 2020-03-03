@@ -17,7 +17,7 @@ class ProfileHeader extends Component {
                     </div>
                   </div>
                   <div className="text-center">
-                    <h1 className="display-4 text-center">{profile.user.name}</h1>
+                    <h1 className="display-4 text-center">{profile.user.name} <img className="verified" src={profile.user.name === "Duniya Naphtali K." ? "https://res.cloudinary.com/telicsound/image/upload/v1583264824/correct_r3g0qz.svg" : null} alt="Verified Account" title="Verified" name="Verified"/></h1>
                     <p className="lead text-center">{profile.status} {isEmpty(profile.company) ? null : (<span> at {profile.company}</span>)}</p>
                     {isEmpty(profile.location) ? null : (<p>{profile.location}</p>)}
                     <p>

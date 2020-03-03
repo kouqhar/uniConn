@@ -38,7 +38,7 @@ class Posts extends Component {
               </div>
               <div className="col-md-10">
                 <p className="lead text-left">
-            Thank you for signing up! This is a platform for students from various institutions to come on and communicate with each other, to activate your account and gain presence from others, here are some few tips  and tricks : <br />
+                Nice to have you onboard! This is a platform for students from various institutions to come on and communicate with each other, to activate your account and gain presence from others, here are some few tips  and tricks : <br />
             a. Create your profile with all the necessary fields filled. <br />
             b. Complete your profile by adding your Education, Experience, etc. <br />
             c. Post and Comment so your account could be found in the discovery. <br />

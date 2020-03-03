@@ -14,7 +14,7 @@ class ProfileItem extends Component {
                         <img src={profile.user.avatar} alt={profile.user.name} className="rounded-circle"/>
                     </div>
                     <div className="col-lg-6 col-md-4 col-8">
-                        <h3>{profile.user.name} <img className="verified" src={profile.user.name === "Duniya Naphtali K." ? "https://res.cloudinary.com/telicsound/image/upload/v1583264824/correct_r3g0qz.svg" : null} alt="Verified Account" title="Verified" name="Verified"/></h3>
+                        <h3 className=" verified-container">{profile.user.name} <img className="verified" src={profile.user.name === "Duniya Naphtali K." ? "https://res.cloudinary.com/telicsound/image/upload/v1583264824/correct_r3g0qz.svg" : null} alt="Verified Account" title="Verified" name="Verified"/></h3>
                         <p>
                             {profile.status} {isEmpty(profile.company) ? null : (<span>at {profile.company}</span>)}
                         </p>

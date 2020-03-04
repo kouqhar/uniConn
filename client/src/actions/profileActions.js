@@ -80,6 +80,7 @@ export const addEducation = (eduData, history) => dispatch => {
 
 // Delete an Experience
 export const deleteExperience = (id) => dispatch => {
+    if(window.confirm("Delete this field? This can NOT be undone!!!")){
     axios
     .delete(`/api/profile/experience/${id}`)
     .then(res => 
@@ -95,9 +96,11 @@ export const deleteExperience = (id) => dispatch => {
         })
     )
 }
+}
 
 // Delete an Education
 export const deleteEducation = (id) => dispatch => {
+    if(window.confirm("Delete this field? This can NOT be undone!!!")){
     axios
     .delete(`/api/profile/education/${id}`)
     .then(res => 
@@ -112,6 +115,7 @@ export const deleteEducation = (id) => dispatch => {
             payload : err.response.data
         })
     )
+    }
 }
 
 // Get all profiles

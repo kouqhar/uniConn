@@ -9,7 +9,7 @@ const middleware = [thunk];
 const store = createStore(rootReducer, initialState, compose(
     applyMiddleware(...middleware),
     // Implement the chrome extension
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : a => a
     ));
 
 export default store;
